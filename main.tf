@@ -15,6 +15,6 @@ resource "aws_instance" "web" {
   instance_type = lookup(var.instance_type, "dev", "t2.nano")
 
   tags = {
-    Name = "Ec2-Instance"
+    Name = "Ec2-VM"
   }
 }
